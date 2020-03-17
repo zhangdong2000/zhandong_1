@@ -19,14 +19,16 @@
 	backgroud-color:blue;
 	border:1px soild blue;
 	border-radius:4px 4px 4px 4px; 
-	margin:20px 0px 0px 90px;
+	margin:20px 0px 0px 0px;
+	align:center;
 	}
 </style>
 
 </head>
 <body>
-	<form action="doFind" method="post" enctype="application/x-www-form-urlencoded">
+	<form action="doFind" target="#" method="post" enctype="application/x-www-form-urlencoded">
 		<input class="first" type="text" name="findValue"></input><br />
+		<input class="second" type="button" name="findAll" value="查询全部"></input>
 		<input class="second" type="submit" value="查询">
 	</form>
 </body>
