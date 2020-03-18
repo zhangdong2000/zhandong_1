@@ -34,17 +34,19 @@ public class JDBCTools {
 	}
 	public ArrayList<Map<String,String>> find(String sql){
 		connect();
+		System.out.println("创建连接成功！！");
 		ArrayList<Map<String,String>> rlist=new ArrayList<Map<String,String>>();
 		try{
 			rs=stmt.executeQuery(sql);
-			
+			System.out.println("查询数据成功！！！");
 			ResultSetMetaData rsmd =rs.getMetaData();
 			while(rs.next()){
 				Map<String,String> map=new HashMap<String,String>();
-				for(int i=0;i<rsmd.getColumnCount();i++){
+				for(int i=1;i<=rsmd.getColumnCount();i++){
 					map.put(rsmd.getColumnName(i), rs.getString(rsmd.getColumnName(i)));
 				}
 				rlist.add(map);
+				System.out.println("添加数据成功！！！");
 			}
 			
 			
@@ -71,5 +73,7 @@ public class JDBCTools {
 			e.printStackTrace();
 		}
 	}
+
+
 
 }

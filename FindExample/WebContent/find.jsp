@@ -26,9 +26,8 @@
 
 </head>
 <body>
-	<form action="doFind" target="#" method="post" enctype="application/x-www-form-urlencoded">
-		<input class="first" type="text" name="findValue"></input><br />
-		<input class="second" type="button" name="findAll" value="查询全部"></input>
+	<form action="doFind" method="get" target="showFrame" enctype="application/x-www-form-urlencoded">
+		
 		<input class="second" type="submit" value="查询">
 	</form>
 </body>
