@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			function loadmore(){
+				newDiv = document.createElement("div");
+				newDiv.width="320px";
+				newDiv.height = "144px";
+				newDiv.innerHTML="<div style='float:left; width:160px; height:144px; '>"
+				+"<img src='C:\Users\Administrator\Desktop\imgsAnimals\p3.jpg' />"
+				+"</div>"
+				+"<div style='float:left; width:160px; height:144px; '>"
+				+"<img src='C:\Users\Administrator\Desktop\imgsAnimals\p4.jpg' />"
+				+"</div>";
+				document.getElementById("showimg").appendChild(newDiv);
+			}
+			
+		</script>
+	</head>
+	<body>
+		<div>
+			<div style="width:320px; height:35px; background:#ffff88; text-align:center;">
+				图片信息
+			</div>
+			<div id="showimg" >
+				<div style="width:320px; height:144px; background:blue;">
+					<div style="float:left; width:160px; height:144px">
+						<img style="width:100%; height:100%;" src="C:\Users\Administrator\Desktop\imgsAnimals\p1.jpg" />
+					</div>
+					<div style="float:left; width:160px; height:144px">
+						<img style="width:100%; height:100%;" src="C:\Users\Administrator\Desktop\imgsAnimals\p2.jpg" />
+					</div>
+				</div>
+			</div>
+			<div style="width:320px; height:35px; background:#ffff88; text-align:center;" onclick="loadmore()">
+				加载更多
+			</div>
+		</div>
+	</body>
+</html>
