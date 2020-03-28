@@ -1,0 +1,20 @@
+1、AJAX
+	异步的			JavaScript	and		XML
+	asynchronous
+2、应用场景：二级联动：
+	（层级）：学校----学院
+	（层级）：省-----市
+3、分析：
+	（1）页面上只显示了【省】下拉框的数据
+	（2）通过选择不同的【省】获取到对应省的数据
+		页面（HTML）的【省】--ajax--Servlet（Java代码）---连接到数据库
+	（3）对应的【省】下面的【城市数据】存储在数据库中
+	（4）可以通过（Java代码）JDBC技术去连接数据库
+4、onchange事件
+	表示当前的选择发生了变化，选择了其他的选项
+	onchange="myChange123(this)"
+	this表示当前的选择，选项
+5、对于js来说
+	select是一个标签，元素、节点（Object HTMLSelectElement）
+	包含了一个数组：选项数组（即所有的option）
+		所有元素的数组  = select元素.options;
